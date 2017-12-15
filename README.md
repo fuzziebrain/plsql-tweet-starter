@@ -1,6 +1,9 @@
 # Starter Code for Tweeting with PL/SQL
 The provided code and instruction assumes that the developer is performing operations using the single-user OAuth method.
 
+## Requirements
+* [Oracle Application Express](https://apex.oracle.com/) version 5.1 or later
+
 ## Instructions
 1. Compile the code in the following order:
 ```bash
