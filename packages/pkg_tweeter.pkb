@@ -63,8 +63,8 @@ as
     );
 
     if apex_web_service.g_status_code != 200 then
-      dbms_output.put_line(l_response);
-      raise_application_error(-20001, 'Failed to send update. Error: ' || apex_web_service.g_status_code);
+      raise_application_error(-20001, 'Failed to send update. Error (' || apex_web_service.g_status_code
+        || ') ' || l_response);
     end if;
   end post_update;
 end pkg_tweeter;
